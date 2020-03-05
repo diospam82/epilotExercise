@@ -1,0 +1,47 @@
+{"properties": [
+  {
+    "name": "app.url.github.api.userActivity",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.userActivity'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.postfix",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.postfix'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.prefix",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.prefix'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.postfix.listOfMerged",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.postfix.listOfMerged'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.postfix.number",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.postfix.number'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.durationInDays",
+    "type": "java.lang.int",
+    "description": "A description for 'app.url.github.api.repoPullRequests.durationInDays'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.itemsPerPage",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.itemsPerPage'"
+  },
+  {
+    "name": "app.url.github.api.repopullrequests.page",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.repoPullRequests.page'"
+  },
+  {
+    "name": "app.url.github.api.useractivity.durationInHours",
+    "type": "java.lang.String",
+    "description": "A description for 'app.url.github.api.useractivity.durationInHours'"
+  }
+]}
