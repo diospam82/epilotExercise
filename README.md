@@ -4,22 +4,35 @@ Sources were created by Dominik von Lavante in Eclipse with the Spring-Boot Laun
 
 The requirements for this program are as follows:
 Write a small Springboot application that interacts with github.com and exposes 2 endpoints:
+
 •	GET - /active/<user> - calling this endpoint will return a json body with a boolean field. 
 If the specified user has pushed code in the last 24 hours, it will be true. It will be False otherwise.
+  
 •	GET /downwards/<repo> - calling this endpoint will return a json body with a booleam field. 
 If the specified git repo had more deletions than additions in the last 7 days, return true. The field will be False otherwise.
+  
 Package it as a docker container.
 Try to document the functionality to the best of your ability in the README.md.
+
 No github specific library or sdk is allowed. Other third party libraries are allowed.
+
 Testing is encouraged.
+
 Please provide a public git repo to us with the code, Dockerfile and README.md.
 
+------------------------------------------------------------------------------------------------------------------
+
 Implicit decisions that I derive from these requirements:
+
 -No user authentification allowed -> Application is limited to Github REST API 3.0
+
 -A get query for <repo> only is impossible. Only the combination of an owner + repo may be queried. 
+  
 -The API has hence been changed to /downwards/<owner>/<repo>
+  
 -It is assumed that the deletions and additions are only to be summed up for succesful pulls that were merged. Open pulls are ignored 
 as well as closed, unsuccesfull, pulls.
+
 
 General structure of code:
 For each GET command there is a separate controller class.
